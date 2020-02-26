@@ -34,16 +34,20 @@ let black = Color(hue: 0, saturation: 100, brightness: 0, alpha: 100)
 // Begin your work below...
 canvas.fillColor = orange
 canvas.drawRectangle(at: Point(x: 0, y: 0), width: 400, height: 600)
-canvas.lineColor = offWhite
-for y in stride(from: 0, through: 600, by: 50){
-    canvas.drawLine(from: Point(x:0,y:y), to: Point(x:400,y:y))
-}
-for x in stride(from: 0, through: 400, by: 50){
-    canvas.drawLine(from: Point(x: x, y: 0), to: Point(x: x, y: 600))
-}
+//canvas.lineColor = offWhite
+//for y in stride(from: 0, through: 600, by: 50){
+//    canvas.drawLine(from: Point(x:0,y:y), to: Point(x:400,y:y))
+//}
+//for x in stride(from: 0, through: 400, by: 50){
+//    canvas.drawLine(from: Point(x: x, y: 0), to: Point(x: x, y: 600))
+//}
 canvas.drawText(message: "the clash", at: Point(x: 20, y: 80), size: 48)
 canvas.drawText(message: "with the brattles", at: Point(x: 20, y: 35), size: 8)
-canvas.drawText(message: "with the brattles", at: Point(x: 20, y: 25), size: 8)
+canvas.drawText(message: "and dead kennedys", at: Point(x: 20, y: 25), size: 8)
+canvas.drawText(message: "matinee anc eve", at: Point(x: 105, y: 35), size: 8)
+canvas.drawText(message: "saturday / june 13 1981", at: Point(x: 105, y: 25), size: 8)
+canvas.drawText(message: "bonds international casino", at: Point(x: 260, y: 35), size: 8)
+canvas.drawText(message: "in times square, new york city", at: Point(x: 260, y: 25), size: 8)
 
 canvas.rotate(by: -45)
 //canvas.drawAxes()
